@@ -4,11 +4,14 @@ from turtle import Screen
 from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
+from road import Road
 
 screen = Screen()
+screen.bgcolor("black")
 screen.setup(width=600, height=600)
 screen.tracer(0)
 
+road = Road()
 player = Player()
 car = CarManager()
 scoreboard = Scoreboard()
